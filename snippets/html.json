@@ -1,0 +1,36 @@
+{
+
+	"main Tag":{
+		"prefix":"main",
+		"body": "<div [class]=\"'MainPod'\">\n\n</div>"
+	},
+	"section Tag":{
+		"prefix":"section",
+		"body": "<section [class]=\"classPrefix('Pod$1')\">\n\n</section>"
+	},
+	"classPrefix":{
+		"prefix":"classPrefix",
+		"body": "[class]=\"classPrefix('$1')\""
+	},
+
+	"img":{
+		"prefix":"img",
+		"body": "<img [src]=$1.src [alt]=\"$1.alt | translate\" />"
+	},
+	"component-with-params":{
+		"prefix":"<params",
+		"body": "<$1 [params]=\"params\"></$1>"
+	},
+	"icon":{
+		"prefix":"i",
+		"body":"<i [class]=\"classPrefix('Pod$1Icon$2') + ' fa-solid $3'\"></i>"
+	},
+	"Angular animate": {
+		"prefix": "wmlanimate",
+		"body": [
+			"[ngStyle]=\"$1.style\"",
+			"(animationend)=\"$1.animationEnd(\\$event)\"",
+			"[class]=\"$1.class\""
+		]
+	}
+}
