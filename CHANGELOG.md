@@ -27,3 +27,6 @@ on every vscode update a new version will be release
 
 ## [1.86.1000] - 2-10-2024
 * added arrange act assert comments in flask route test case generator
+
+## [1.86.1001] - 2-19-2024
+* updated color var support for the my-rgb-to-filter fn

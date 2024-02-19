@@ -28,7 +28,15 @@
 	},
 	"scss css color vars":{
 		"prefix": "--wml-orig",
-		"body": "--wml-$1:#{\\$wml-$1};\n--wml-orig-$1:#{\\$wml-$1};"
+		"body": [
+			"\\$wml-$1:\"$2\";",
+			"\\$wml-$1-filter:rgb_to_hsl(\\$wml-$1);",
+			"//for root directive",
+			"--wml-$1:#{\\$wml-$1};",
+			"--wml-orig-$1:#{\\$wml-$1};",
+			"--wml-$1-filter:#{\\$wml-$1-filter};",
+			"--wml-orig-$1-filter:#{\\$wml-$1-filter};"
+		]
 	},
 	"@font face base64":{
 		"prefix":"@font-face",
