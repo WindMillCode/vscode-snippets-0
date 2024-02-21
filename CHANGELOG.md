@@ -33,3 +33,6 @@ on every vscode update a new version will be release
 
 ## [1.86.1002] - 2-21-2024
 * update scss.json wml-spacing to only use css variables
+
+## [1.86.2000] - 2-21-2024
+* [FIX] updated scss.json wml-spacing put number outside parentheses
