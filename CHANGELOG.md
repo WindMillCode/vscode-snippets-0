@@ -30,3 +30,6 @@ on every vscode update a new version will be release
 
 ## [1.86.1001] - 2-19-2024
 * updated color var support for the my-rgb-to-filter fn
+
+## [1.86.1002] - 2-21-2024
+* update scss.json wml-spacing to only use css variables

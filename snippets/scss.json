@@ -50,7 +50,7 @@
 	},
 	"wml-spacing":{
 		"prefix": "spacing",
-		"body": "\\$wml-spacing$1"
+		"body": "var(--wml-spacing)$1"
 	},
 	"SCSS WMLAnimate": {
 		"prefix": "wmlanimate",
