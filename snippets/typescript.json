@@ -4,12 +4,12 @@
 		"prefix": "class",
 		"body": [
 			"export class $1 {",
-			"  constructor(params: Partial<$1> = {}) {",
-			"    let origParams = Object.entries(params)",
+			"  constructor(props: Partial<$1> = {}) {",
+			"    let origProps = Object.entries(props)",
 			"      .filter(([key,val]) => {",
 			"        return !key.startsWith('param');",
 			"      });",
-			"    Object.assign(this, { ...Object.fromEntries(origParams) });",
+			"    Object.assign(this, { ...Object.fromEntries(origProps) });",
 			"  }",
 			"}"
 		],

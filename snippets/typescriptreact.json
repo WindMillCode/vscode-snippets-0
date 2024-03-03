@@ -52,7 +52,18 @@
 	},
 	"class":{
 		"prefix": "class",
-		"body": "class $1 {\n\tconstructor(params:Partial<$1>={}){\n\t\tObject.assign(\n\t\t\tthis,\n\t\t\t{\n\t\t\t\t...params\n\t\t\t}\n\t\t)\n\t}\n}"
+		"body": [
+			"export class $1 {",
+			"  constructor(props: Partial<$1> = {}) {",
+			"    let origProps = Object.entries(props)",
+			"      .filter(([key,val]) => {",
+			"        return !key.startsWith('param');",
+			"      });",
+			"    Object.assign(this, { ...Object.fromEntries(origProps) });",
+			"  }",
+			"}"
+		],
+		"description": "Creates a class with a filtered constructor"
 	},
 	"img":{
 		"prefix":"<img",

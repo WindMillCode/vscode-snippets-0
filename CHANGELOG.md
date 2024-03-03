@@ -36,3 +36,16 @@ on every vscode update a new version will be release
 
 ## [1.86.2000] - 2-21-2024
 * [FIX] updated scss.json wml-spacing put number outside parentheses
+
+## [1.87.0]  - 3-3-2024
+
+### Changes to `typescript.json`
+- In the TypeScript snippet, the constructor parameter name was changed from `params` to `props`.
+- Correspondingly, the variable `origParams` was renamed to `origProps` to reflect the change in the constructor parameter.
+- The `Object.assign` method now uses `origProps` instead of `origParams`.
+
+### Changes to `typescriptreact.json`
+- Added a new snippet under the "class" key:
+  - The snippet defines an exported class with a constructor that accepts `props` of type `Partial<$1>`.
+  - Inside the constructor, `props` is converted to entries, filtered to exclude keys starting with 'param', and then used to assign values to the class instance.
+  - A description was added for the snippet: "Creates a class with a filtered constructor".
