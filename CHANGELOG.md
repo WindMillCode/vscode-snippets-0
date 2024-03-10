@@ -49,3 +49,8 @@ on every vscode update a new version will be release
   - The snippet defines an exported class with a constructor that accepts `props` of type `Partial<$1>`.
   - Inside the constructor, `props` is converted to entries, filtered to exclude keys starting with 'param', and then used to assign values to the class instance.
   - A description was added for the snippet: "Creates a class with a filtered constructor".
+
+
+## [1.87.1000] - 3-10-2024
+* [PATCH] Updated the 'data' field in the request body from a string to an empty dictionary in the Python snippets configuration.
+

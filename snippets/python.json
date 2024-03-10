@@ -42,7 +42,7 @@
 				"# arrange",
 				"  $2_mock = mocker.patch('handlers.$6.$2', return_value=TestUtils.generic_fake_result)",
 				"  req_body = {",
-				"    'data': 'data'",
+				"    'data': { }",
 				"  }",
 				"  response = client.$3('/$7/$4', json=req_body)",
 				"",
