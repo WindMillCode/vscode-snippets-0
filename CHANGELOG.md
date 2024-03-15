@@ -54,3 +54,9 @@ on every vscode update a new version will be release
 ## [1.87.1000] - 3-10-2024
 * [PATCH] Updated the 'data' field in the request body from a string to an empty dictionary in the Python snippets configuration.
 
+## [1.87.2000] - 3-15-2024
+
+* [UPDATE] Changed constructor parameter name from `props` to `params` in TypeScript snippets.
+* [PATCH] Updated object assignment to use `origParams` instead of `origProps` in TypeScript snippets.
+* [UPDATE] Changed constructor parameter name from `props` to `params` in TypeScript React snippets.
+* [PATCH] Updated object assignment to use `origParams` instead of `origProps` in TypeScript React snippets.
