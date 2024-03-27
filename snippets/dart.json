@@ -24,6 +24,13 @@
     "prefix":"MediaQuery.of(",
     "body":"MediaQuery.of(context).size"
   },
+  " Flutter i18n": {
+    "prefix": "i18n",
+    "body": [
+      "FlutterI18n.translate(context, msg)"
+    ],
+    "description": "Show a localized snackbar with ScaffoldMessenger."
+  },
   "Scaffold Messenger":{
     "prefix":"ScaffoldMessenger.of",
     "body": [
