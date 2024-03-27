@@ -60,3 +60,7 @@ on every vscode update a new version will be release
 * [PATCH] Updated object assignment to use `origParams` instead of `origProps` in TypeScript snippets.
 * [UPDATE] Changed constructor parameter name from `props` to `params` in TypeScript React snippets.
 * [PATCH] Updated object assignment to use `origParams` instead of `origProps` in TypeScript React snippets.
+
+## [1.87.2001] - 3-27-2024
+
+[UPDATE] Introduced a new snippet `Scaffold Messenger with Flutter i18n` to show localized messages using snackbars, facilitating internationalization in Flutter apps.
