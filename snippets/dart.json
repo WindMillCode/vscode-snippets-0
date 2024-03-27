@@ -34,14 +34,14 @@
   "Scaffold Messenger":{
     "prefix":"ScaffoldMessenger.of",
     "body": [
-      "if (!context.mounted) return;",
+      "if (!mounted) return;",
       "ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(msg)));"
     ]
   },
   "Scaffold Messenger with Flutter i18n": {
     "prefix": "ScaffoldMessenger.of",
     "body": [
-      "if (!context.mounted) return;",
+      "if (!mounted) return;",
       "ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(FlutterI18n.translate(context, msg))));"
     ],
     "description": "Show a localized snackbar with ScaffoldMessenger."

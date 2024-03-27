@@ -67,3 +67,7 @@ on every vscode update a new version will be release
 
 ## [1.87.2002] - 3-27-2024
 [UPDATE] - Introduced a new snippet `Flutter i18n` to show localized messages , facilitating internationalization in Flutter apps.
+
+## [1.87.2003] - 3-27-2024
+
+[FIX] - Adjusted the condition in the Scaffold Messenger and Scaffold Messenger with Flutter i18n snippets to use mounted directly instead of context.mounted.
