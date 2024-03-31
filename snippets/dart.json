@@ -50,5 +50,15 @@
     "prefix": "flterr",
     "body": ["error: (err, stack) { err = err.toString(); var stackString = stack.toString(); return SingleChildScrollView(child: Text(\"\\$err\\n\\$stackString\")); }, "],
     "description": "Print Flutter error and stack trace"
-}
+  },
+
+    "Print Error and Stack Trace": {
+        "prefix": "printErrorStackTrace",
+        "body": [
+            "\"\\${err.toString()}\\n\\${stack.toString()}\""
+        ],
+        "description": "Print error and stack trace information"
+    }
+
+
 }

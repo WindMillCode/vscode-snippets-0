@@ -71,3 +71,17 @@ on every vscode update a new version will be release
 ## [1.87.2003] - 3-27-2024
 
 [FIX] - Adjusted the condition in the Scaffold Messenger and Scaffold Messenger with Flutter i18n snippets to use mounted directly instead of context.mounted.
+
+## [1.87.2004] - 3-30-2024
+[UPDATE]
+
+- Removed tasks related to Git operations and miscellaneous script executions from `.vscode/tasks.json`.
+  - Task for pushing work to git remote.
+  - Task for merging changes from the current development branch.
+  - Task for removing all `.vsix` files.
+  - Task for packaging the project and related Git operations.
+  - Task for creating a new Go command.
+
+[BUG]
+
+- Added a new snippet in `snippets/dart.json` for printing error and stack trace information, enhancing debugging capabilities in Dart files.
