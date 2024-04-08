@@ -85,3 +85,7 @@ on every vscode update a new version will be release
 [BUG]
 
 - Added a new snippet in `snippets/dart.json` for printing error and stack trace information, enhancing debugging capabilities in Dart files.
+
+## [1.87.2005] - 4-08-2024 11:58:00 PM EST
+- [UPDATE] In dart.json, we added a "ProcessRequestFunction" snippet. It's like we wrote down a new method for our program to follow when it needs to process requests using an asynchronous function.
+- [UPDATE] We also introduced a "ProcessRequestCallback" snippet in dart.json. This snippet is like a new set of instructions for our program, helping it handle user accounts and requests asynchronously, especially when it needs to communicate with a server.

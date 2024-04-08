@@ -1,38 +1,35 @@
-
 {
-  "Outline1":{
+  "Outline1": {
     "prefix": "border",
     "body": "decoration: BoxDecoration(border: Border.all()),"
   },
-  "riverPodProvider":{
+  "riverPodProvider": {
     "prefix": "ref.watch",
     "body": "final $1 = ref.watch(${1/(.*)/${1:/capitalize}/}RiverpodProvider)"
   },
-  "Future delayed zero":{
-    "prefix":"Future.delayed(Duration.zero",
-    "body":"Future.delayed(Duration.zero, () { \n\n\t$0\n });"
+  "Future delayed zero": {
+    "prefix": "Future.delayed(Duration.zero",
+    "body": "Future.delayed(Duration.zero, () { \n\n\t$0\n });"
   },
-  "Material page route":{
-    "prefix":"Navigator.push",
-    "body":"Navigator.push(context, MaterialPageRoute(builder: (context) {\n\treturn BannerExample();\n}));"
+  "Material page route": {
+    "prefix": "Navigator.push",
+    "body": "Navigator.push(context, MaterialPageRoute(builder: (context) {\n\treturn BannerExample();\n}));"
   },
-  "Async Riverpod  provider when":{
-    "prefix":".when",
-    "body":"$1.when(\n\tloading: () => CircularProgressIndicator(),\n\terror: (err, stack) =>\n\t\tText('An Error has ocurred'),\n\tdata:(wmlDB){\n\treturn Container();\n}\n)"
+  "Async Riverpod  provider when": {
+    "prefix": ".when",
+    "body": "$1.when(\n\tloading: () => CircularProgressIndicator(),\n\terror: (err, stack) =>\n\t\tText('An Error has ocurred'),\n\tdata:(wmlDB){\n\treturn Container();\n}\n)"
   },
-  "MediaQueryContext":{
-    "prefix":"MediaQuery.of(",
-    "body":"MediaQuery.of(context).size"
+  "MediaQueryContext": {
+    "prefix": "MediaQuery.of(",
+    "body": "MediaQuery.of(context).size"
   },
   " Flutter i18n": {
     "prefix": "i18n",
-    "body": [
-      "FlutterI18n.translate(context, msg)"
-    ],
+    "body": ["FlutterI18n.translate(context, msg)"],
     "description": "Show a localized snackbar with ScaffoldMessenger."
   },
-  "Scaffold Messenger":{
-    "prefix":"ScaffoldMessenger.of",
+  "Scaffold Messenger": {
+    "prefix": "ScaffoldMessenger.of",
     "body": [
       "if (!mounted) return;",
       "ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(msg)));"
@@ -48,17 +45,44 @@
   },
   "Print Flutter Error and StackTrace": {
     "prefix": "flterr",
-    "body": ["error: (err, stack) { err = err.toString(); var stackString = stack.toString(); return SingleChildScrollView(child: Text(\"\\$err\\n\\$stackString\")); }, "],
+    "body": [
+      "error: (err, stack) { err = err.toString(); var stackString = stack.toString(); return SingleChildScrollView(child: Text(\"\\$err\\n\\$stackString\")); }, "
+    ],
     "description": "Print Flutter error and stack trace"
   },
 
-    "Print Error and Stack Trace": {
-        "prefix": "printErrorStackTrace",
-        "body": [
-            "\"\\${err.toString()}\\n\\${stack.toString()}\""
-        ],
-        "description": "Print error and stack trace information"
-    }
+  "Print Error and Stack Trace": {
+    "prefix": "printErrorStackTrace",
+    "body": ["\"\\${err.toString()}\\n\\${stack.toString()}\""],
+    "description": "Print error and stack trace information"
+  },
 
-
+  "ProcessRequestFunction": {
+    "prefix": "processRequest",
+    "body": [
+      "processRequest(context, ref, () async {",
+      "\treturn await $1();",
+      "});"
+    ],
+    "description": "Template for processing a request with a provided asynchronous function."
+  },
+  "ProcessRequestCallback": {
+    "prefix": "processRequestCallback",
+    "body": [
+      "$1() async {",
+      "\tfinal accounts = ref.read(AccountsRiverpodProvider);",
+      "\ttry {",
+      "\t\tString accessToken = (await accounts.currentUser!.getAccessToken())!;",
+      "\t\tvar uiReqModel = $2(",
+      "\t\t\taccessToken: accessToken,",
+      "\t\t);",
+      "\t\tawait $3(reqBody: uiReqModel);",
+      "\t} catch (e) {",
+      "\t\tresult.msg = translate(\"global.serverError\");",
+      "\t}",
+      "\treturn result;",
+      "}"
+    ],
+    "description": "Async function template using Riverpod for state management."
+  }
 }
