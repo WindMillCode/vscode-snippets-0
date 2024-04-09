@@ -70,6 +70,7 @@
     "prefix": "processRequestCallback",
     "body": [
       "$1() async {",
+      "\tvar result = OverlayZeroProcessRequestPredicateResult();",
       "\tfinal accounts = ref.read(AccountsRiverpodProvider);",
       "\ttry {",
       "\t\tString accessToken = (await accounts.currentUser!.getAccessToken())!;",
