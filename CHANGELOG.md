@@ -93,3 +93,7 @@ on every vscode update a new version will be release
 ## [1.87.2006] 4/08/2024 09:04:02 PM EST
 
 - [PATCH] In the `dart.json` file, we added a new line to create a `result` variable that's set to `OverlayZeroProcessRequestPredicateResult()`. This helps our program handle tasks more effectively by preparing a special spot to store some important info it needs to work with.
+
+## [1.88.0] 4/16/2024 10:23:18 AM EST
+
+[UPDATE] Changed the img component in html.json. Added an error event handler to images. Now you can specify what happens if an image fails to load.

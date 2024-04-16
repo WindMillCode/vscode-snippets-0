@@ -15,7 +15,7 @@
 
 	"img":{
 		"prefix":"img",
-		"body": "<img [src]=$1.src [alt]=\"$1.alt | translate\" />"
+		"body": "<img (error)=$1.onError($event) [src]=$1.src [alt]=\"$1.alt | translate\" />"
 	},
 	"component-with-params":{
 		"prefix":"<params",
