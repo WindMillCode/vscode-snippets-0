@@ -97,3 +97,6 @@ on every vscode update a new version will be release
 ## [1.88.0] 4/16/2024 10:23:18 AM EST
 
 [UPDATE] Changed the img component in html.json. Added an error event handler to images. Now you can specify what happens if an image fails to load.
+
+## [1.88.1000] [4/30/2024 1:00:00 PM EST]
+[UPDATE] In typescript.json, we tweaked how you make classes. Now when you type "class", you can make a class with a constructor that filters stuff. Also added a new fancy thing where the class gets a special decorator called WMLConstructorDecorator. This helps when you need a class to do specific things right from the get-go.
