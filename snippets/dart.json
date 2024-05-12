@@ -69,7 +69,7 @@
   "ProcessRequestCallback": {
     "prefix": "processRequestCallback",
     "body": [
-      "$1() async {",
+      "Future<OverlayZeroProcessRequestPredicateResult> $1() async {",
       "\tvar result = OverlayZeroProcessRequestPredicateResult();",
       "\tfinal accounts = ref.read(AccountsRiverpodProvider);",
       "\ttry {",
