@@ -79,7 +79,7 @@
       "\t\t\taccessToken: accessToken,",
       "\t\t);",
       "\t\tawait $3(reqBody: uiReqModel);",
-      "\t} catch (e) {",
+      "\t} catch (err,stack) {",
       "\t\tresult.msg = translate(\"global.systemError\");",
       "\t}",
       "\treturn result;",

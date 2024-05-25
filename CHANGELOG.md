@@ -107,3 +107,13 @@ on every vscode update a new version will be release
 ## [1.89.1001]  [5/12/2024 10:21:00 AM EST]
 [UPDATE] In snippets/dart.json, updated how the access token is retrieved within the function. Now, it first stores the current user in a variable before getting the access token. Also changed the error message to better reflect system errors. This makes the code cleaner and error messages clearer for handling issues.
 
+
+## [1.89.1002]  [5/25/2024 4:35:22 PM EST]
+
+[FIX] Changed catch clause to include stack trace for error handling in `snippets/dart.json`.
+
+File impacted:
+- `snippets/dart.json`
+
+Changes:
+- Modified the catch clause from `catch (e)` to `catch (err, stack)` to better handle and log errors.
