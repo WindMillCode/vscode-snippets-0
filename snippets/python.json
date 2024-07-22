@@ -34,7 +34,7 @@
 				"@$1.route('/$4', methods=['${3/(.*)/${1:/upcase}/}'])",
         "def $1_$2():",
         "  data = request.json.get('data', {})",
-        "  resp_body = $6.$2(data)",
+        "  resp_body = $2(data)",
         "  res = APIMsgFormat(data=resp_body,msg=CONFIGS.endpoint_msg_codes[\"success\"])",
         "  return res.return_flask_response()",
 				"# paste to test case file",

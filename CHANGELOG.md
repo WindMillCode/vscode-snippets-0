@@ -117,3 +117,9 @@ File impacted:
 
 Changes:
 - Modified the catch clause from `catch (e)` to `catch (err, stack)` to better handle and log errors.
+
+
+## [1.91.1000] [7/22/2024 1:35:22 PM EST]
+
+[FIX]
+updated flask route snippet so that the handler is not accessed via the root module greatly improving perforamce
