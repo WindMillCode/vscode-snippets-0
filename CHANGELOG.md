@@ -123,3 +123,11 @@ Changes:
 
 [FIX]
 updated flask route snippet so that the handler is not accessed via the root module greatly improving perforamce
+
+
+## [1.91.1001] 7/24/2024 09:15:45 AM EST
+
+[PATCH] Fixed the error parameter in Async Riverpod provider snippet in `snippets/dart.json` from `err` to `e`.
+ Corrected error parameter name in "Print Flutter Error and StackTrace" snippet in `snippets/dart.json` from `err` to `e`.
+ Updated "Print Error and Stack Trace" snippet in `snippets/dart.json` to use `e` instead of `err`.
+Changed error handling parameter in try-catch block in `snippets/dart.json` from `err` to `e` for consistency.

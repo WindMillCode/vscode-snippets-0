@@ -17,7 +17,7 @@
   },
   "Async Riverpod  provider when": {
     "prefix": ".when",
-    "body": "$1.when(\n\tloading: () => CircularProgressIndicator(),\n\terror: (err, stack) =>\n\t\tText('An Error has ocurred'),\n\tdata:(wmlDB){\n\treturn Container();\n}\n)"
+    "body": "$1.when(\n\tloading: () => CircularProgressIndicator(),\n\terror: (e, stack) =>\n\t\tText('An Error has ocurred'),\n\tdata:(wmlDB){\n\treturn Container();\n}\n)"
   },
   "MediaQueryContext": {
     "prefix": "MediaQuery.of(",
@@ -46,14 +46,14 @@
   "Print Flutter Error and StackTrace": {
     "prefix": "flterr",
     "body": [
-      "error: (err, stack) { err = err.toString(); var stackString = stack.toString(); return SingleChildScrollView(child: Text(\"\\$err\\n\\$stackString\")); }, "
+      "error: (e, stack) { err = e.toString(); var stackString = stack.toString(); return SingleChildScrollView(child: Text(\"\\$err\\n\\$stackString\")); }, "
     ],
     "description": "Print Flutter error and stack trace"
   },
 
   "Print Error and Stack Trace": {
     "prefix": "printErrorStackTrace",
-    "body": ["\"\\${err.toString()}\\n\\${stack.toString()}\""],
+    "body": ["\"\\${e.toString()}\\n\\${stack.toString()}\""],
     "description": "Print error and stack trace information"
   },
 
@@ -79,7 +79,7 @@
       "\t\t\taccessToken: accessToken,",
       "\t\t);",
       "\t\tawait $3(reqBody: uiReqModel);",
-      "\t} catch (err,stack) {",
+      "\t} catch (e,stack) {",
       "\t\tresult.msg = translate(\"global.systemError\");",
       "\t}",
       "\treturn result;",
