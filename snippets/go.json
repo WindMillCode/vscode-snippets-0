@@ -1,9 +1,9 @@
 {
-	"genericCommandOptionsSnippet": {
-		"prefix": "genericCommandOptions",
+	"CommandOptionsSnippet": {
+		"prefix": "utils.CommandOptions",
 		"body": [
 			"${1:commandOptions} := utils.CommandOptions{",
-			"\tCommand:     ${2:GetExecutable}(),",
+			"\tCommand:     \"$2\",",
 			"\tArgs:        []string{\"\"},",
 			"\tGetOutput:   true,",
 			"\tTargetDir:   \"$3\",",
@@ -11,7 +11,7 @@
 			"}",
 			"${5:result}, err := utils.RunCommandWithOptions(${1:commandOptions})"
 		],
-		"description": "Generic snippet for creating command options in Go"
+		"description": "Create a go run command"
 	},
 	"for range loop": {
     "prefix": "gorange",

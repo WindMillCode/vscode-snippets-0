@@ -140,3 +140,6 @@ Changed error handling parameter in try-catch block in `snippets/dart.json` from
 - Prefix: `genericCommandOptions`
 - Feature: Command options creation snippet for Go developers
 - Description: This snippet helps you create command options quickly and run commands with options using `utils.CommandOptions` and `utils.RunCommandWithOptions` functions.
+
+## [1.91.1003] 7/27/2024 01:15:45 PM EST
+* [FIX] RENAME TO CommandOptionsSnippet
