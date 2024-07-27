@@ -131,3 +131,12 @@ updated flask route snippet so that the handler is not accessed via the root mod
  Corrected error parameter name in "Print Flutter Error and StackTrace" snippet in `snippets/dart.json` from `err` to `e`.
  Updated "Print Error and Stack Trace" snippet in `snippets/dart.json` to use `e` instead of `err`.
 Changed error handling parameter in try-catch block in `snippets/dart.json` from `err` to `e` for consistency.
+
+## [1.91.1002] 7/27/2024 01:15:45 PM EST
+
+[UPDATE] Added generic command options snippet in Go
+- File: snippets/go.json
+- Added: `genericCommandOptionsSnippet`
+- Prefix: `genericCommandOptions`
+- Feature: Command options creation snippet for Go developers
+- Description: This snippet helps you create command options quickly and run commands with options using `utils.CommandOptions` and `utils.RunCommandWithOptions` functions.
