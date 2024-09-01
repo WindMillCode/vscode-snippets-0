@@ -143,3 +143,13 @@ Changed error handling parameter in try-catch block in `snippets/dart.json` from
 
 ## [1.91.1003] 7/27/2024 01:15:45 PM EST
 * [FIX] RENAME TO CommandOptionsSnippet
+
+## [1.91.2000] [9/1/2024 12:15:30 PM EST]
+
+[UPDATE] Removed the `CSS WMLAnimate` snippet from `snippets/css.json`. If you were using this snippet for keyframe animations, it’s gone now. Check your code. according to @windmillcode/angular-wml-components-base@18.2.2100.
+
+
+[UPDATE] Removed the `SCSS WMLAnimate` snippet from `snippets/scss.json`. Just like in the CSS file, if you relied on this for animations, it’s no longer available according to @windmillcode/angular-wml-components-base@18.2.2100.
+
+[PATCH] Tweaked the `WMLAnimateUIProperty` snippet in `snippets/typescript.json`. Now it uses `keyFrameStyles` instead of the older `beginOpenStyles`, `endOpenStyles`, `beginCloseStyles`, and `endCloseStyles`. The new approach is cleaner according to @windmillcode/angular-wml-components-base@18.2.2100.
+, but you’ll need to update any existing usage of these properties.

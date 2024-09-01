@@ -51,28 +51,6 @@
 	"wml-spacing":{
 		"prefix": "spacing",
 		"body": "var(--wml-spacing$1)"
-	},
-	"SCSS WMLAnimate": {
-		"prefix": "wmlanimate",
-		"body": [
-			"@keyframes toggle-$1 {",
-			"  0% {",
-			"    $2",
-			"  }",
-			"  100% {",
-			"    $3",
-			"  }",
-			"}",
-			"",
-			"&Animation {",
-			"  &0 {",
-			"    animation-name: toggle-$1;",
-			"    animation-duration: .2s;",
-			"    animation-delay: .2s;",
-			"  }",
-			"}"
-		],
-		"description": "CSS Keyframes Animation"
 	}
 
 

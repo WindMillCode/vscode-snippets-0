@@ -26,25 +26,5 @@
 		"prefix":"@font-face",
 		"description":"font face template for base64",
 		"body":"@font-face {\n\tfont-family: '$1';\n\tfont-style: normal;\n\tfont-weight: 900;\n\tfont-display: block;\n\tsrc: url(data:font/truetype;base64,) format('truetype'),\n\turl(data:application/vnd.ms-fontobject;base64,) format('embedded-opentype'),\n\turl(data:image/svg+xml;base64,) format('svg'),\n\turl(data:font/woff;base64,) format('woff'),\n\turl(data:font/woff2;base64,) format('woff2');\n\n}"
-	},
-	"CSS WMLAnimate": {
-		"prefix": "wmlanimate",
-		"body": [
-			"@keyframes toggle-$1 {",
-			"  0% {",
-			"    $2",
-			"  }",
-			"  100% {",
-			"    $3",
-			"  }",
-			"}",
-			"",
-			"&Animation0 {",
-			"    animation-name: toggle-$1;",
-			"    animation-duration: .2s;",
-			"    animation-delay: .2s;",
-			"}"
-		],
-		"description": "CSS Keyframes Animation"
 	}
 }

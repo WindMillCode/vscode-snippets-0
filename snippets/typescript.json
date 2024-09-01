@@ -25,7 +25,6 @@
 		],
 		"description": "Creates a class with the WMLConstructorDecorator"
 	},
-
 	"takeUntil":{
 		"prefix": "takeUntil",
 		"body":"takeUntil(this.ngUnsub),"
@@ -102,17 +101,13 @@
 		"body": [
 			"$1 = new WMLAnimateUIProperty({",
 			"  class: this.classPrefix('Pod0'),",
-			"  beginOpenStyles: {",
-			"    $3",
-			"  },",
-			"  endOpenStyles: {",
-			"    $2",
-			"  },",
-			"  beginCloseStyles: {",
-			"    $2",
-			"  },",
-			"  endCloseStyles: {",
-			"    $3",
+			"  keyFrameStyles: {",
+			"    '0%': {",
+			"      $2",
+			"    },",
+			"    '100%': {",
+			"      $3",
+			"    },",
 			"  }",
 			"})"
 		],
