@@ -25,8 +25,8 @@
 		"prefix":"i",
 		"body":"<i [class]=\"classPrefix('Pod$1Icon$2') + ' fa-solid $3'\"></i>"
 	},
-	"Angular animate": {
-		"prefix": "wmlanimate",
+	"Angular motion": {
+		"prefix": "wmlmotion",
 		"body": [
 			"[ngStyle]=\"$1.style\"",
 			"(animationend)=\"$1.animationEnd(\\$event)\"",

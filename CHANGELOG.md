@@ -153,3 +153,13 @@ Changed error handling parameter in try-catch block in `snippets/dart.json` from
 
 [PATCH] Tweaked the `WMLAnimateUIProperty` snippet in `snippets/typescript.json`. Now it uses `keyFrameStyles` instead of the older `beginOpenStyles`, `endOpenStyles`, `beginCloseStyles`, and `endCloseStyles`. The new approach is cleaner according to @windmillcode/angular-wml-components-base@18.2.2100.
 , but you’ll need to update any existing usage of these properties.
+
+
+## [1.92.2000]  [9/3/2024 10:17:45 AM EST]
+
+[UPDATE] these changes are for WMLANimateUIProperty now its WMLMotionUIProperty
+[UPDATE] Changed snippet in `html.json`: Renamed `"Angular animate"` to `"Angular motion"` and updated the prefix from `wmlanimate` to `wmlmotion`. Affects the usage of the `<i>` tag with class bindings and icons.
+
+[UPDATE] Changed snippet in `typescript.json`: Renamed `"angular WMLAnimateUIProperty"` to `"angular WMLMotionUIProperty"`. Updated the prefix from `wmlanimate` to `wmlmotion`. Affects how you create instances of `WMLMotionUIProperty` with updated class and keyframe styles.
+
+[UPDATE] Updated the description for `"angular WMLMotionUIProperty"` in `typescript.json` to reflect the new name. Make sure you look for `WMLMotionUIProperty` instead of `WMLAnimateUIProperty` when searching or using this snippet.

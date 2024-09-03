@@ -96,10 +96,10 @@
 		"prefix":"wml-form",
 		"body":"<wml-form [params]=$1></wml-form>"
 	},
-	"angular WMLAnimateUIProperty": {
-		"prefix": "wmlanimate",
+	"angular WMLMotionUIProperty": {
+		"prefix": "wmlmotion",
 		"body": [
-			"$1 = new WMLAnimateUIProperty({",
+			"$1 = new WMLMotionUIProperty({",
 			"  class: this.classPrefix('Pod0'),",
 			"  keyFrameStyles: {",
 			"    '0%': {",
@@ -111,7 +111,7 @@
 			"  }",
 			"})"
 		],
-		"description": "Create WMLAnimateUIProperty"
+		"description": "Create WMLMotionUIProperty"
 	},
 	"angular jasmine describe":{
 		"prefix": "describe",
