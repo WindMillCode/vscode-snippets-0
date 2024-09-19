@@ -163,3 +163,10 @@ Changed error handling parameter in try-catch block in `snippets/dart.json` from
 [UPDATE] Changed snippet in `typescript.json`: Renamed `"angular WMLAnimateUIProperty"` to `"angular WMLMotionUIProperty"`. Updated the prefix from `wmlanimate` to `wmlmotion`. Affects how you create instances of `WMLMotionUIProperty` with updated class and keyframe styles.
 
 [UPDATE] Updated the description for `"angular WMLMotionUIProperty"` in `typescript.json` to reflect the new name. Make sure you look for `WMLMotionUIProperty` instead of `WMLAnimateUIProperty` when searching or using this snippet.
+
+## [1.93.1000] [9/19/2024 02:47:13 PM EST]
+
+[UPDATE]
+You’re now using `props` instead of `params` in multiple snippets across `javascriptreact.json`, `typescript.json`, and `typescriptreact.json`. Specifically, this change impacts the constructor function of classes, which now filters out props starting with 'param'. This means if you're writing a class with the provided snippets, use `props` when passing arguments to the constructor, not `params`. also made for `javascript.json`
+
+

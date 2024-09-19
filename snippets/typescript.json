@@ -4,12 +4,12 @@
 		"prefix": "class",
 		"body": [
 			"export class $1 {",
-			"  constructor(params: Partial<$1> = {}) {",
-			"    let origParams = Object.entries(params)",
+			"  constructor(props: Partial<$1> = {}) {",
+			"    let origProps = Object.entries(props)",
 			"      .filter(([key,val]) => {",
 			"        return !key.startsWith('param');",
 			"      });",
-			"    Object.assign(this, { ...Object.fromEntries(origParams) });",
+			"    Object.assign(this, { ...Object.fromEntries(origProps) });",
 			"  }",
 			"}"
 		],
@@ -20,7 +20,7 @@
 		"body": [
 			"@WMLConstructorDecorator",
 			"export class $1 {",
-			"  constructor(params: Partial<$1> = {}) { }",
+			"  constructor(props: Partial<$1> = {}) { }",
 			"}"
 		],
 		"description": "Creates a class with the WMLConstructorDecorator"
@@ -94,7 +94,7 @@
 	},
 	"angular wml-form":{
 		"prefix":"wml-form",
-		"body":"<wml-form [params]=$1></wml-form>"
+		"body":"<wml-form [props]=$1></wml-form>"
 	},
 	"angular WMLMotionUIProperty": {
 		"prefix": "wmlmotion",

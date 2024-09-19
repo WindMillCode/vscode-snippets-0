@@ -50,20 +50,30 @@
 		"prefix": "reduce",
 		"body": ".reduce((acc,$1)=>{$2\n\n})"
 	},
-	"class":{
+	"class with filter constructor":{
 		"prefix": "class",
 		"body": [
 			"export class $1 {",
-			"  constructor(params: Partial<$1> = {}) {",
-			"    let origParams = Object.entries(params)",
+			"  constructor(props: Partial<$1> = {}) {",
+			"    let origProps = Object.entries(props)",
 			"      .filter(([key,val]) => {",
 			"        return !key.startsWith('param');",
 			"      });",
-			"    Object.assign(this, { ...Object.fromEntries(origParams) });",
+			"    Object.assign(this, { ...Object.fromEntries(origProps) });",
 			"  }",
 			"}"
 		],
 		"description": "Creates a class with a filtered constructor"
+	},
+	"class with filter WMLConstructorDecorator":{
+		"prefix": "class",
+		"body": [
+			"@WMLConstructorDecorator",
+			"export class $1 {",
+			"  constructor(props: Partial<$1> = {}) { }",
+			"}"
+		],
+		"description": "Creates a class with the WMLConstructorDecorator"
 	},
 	"img":{
 		"prefix":"<img",
