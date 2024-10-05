@@ -21,7 +21,7 @@
         "}"
     ],
     "description": "Create a Go for range loop"
-},
+	},
 	"GetInput": {
 		"prefix": "GetInputFromStdin",
 		"body": [
@@ -37,6 +37,18 @@
     "description": "code to create a cli interface where a user must choose a program"
 
 	},
+		"TakeVariableArgs": {
+			"prefix": "TakeVariableArgs",
+			"body": [
+				"portsArgs := utils.TakeVariableArgsStruct{",
+				"\tPrompt:  \"$2\",",
+				"\tDefault: \"$3\",",
+				"}",
+				"$1 := utils.TakeVariableArgs(portsArgs)"
+			],
+			"description": "Multiple Answer Prompt"
+		},
+
   "RemoveDir": {
 		"prefix": "RemoveDir",
 		"body": [

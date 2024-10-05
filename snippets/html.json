@@ -15,7 +15,7 @@
 
 	"img":{
 		"prefix":"img",
-		"body": "<img (error)=$1.onError($event) [src]=$1.src [alt]=\"$1.alt | translate\" />"
+		"body": "<img (error)=$1.onError(\\$event) [src]=$1.src [alt]=\"$1.alt | translate\" />"
 	},
 	"component-with-params":{
 		"prefix":"<params",
@@ -25,11 +25,19 @@
 		"prefix":"i",
 		"body":"<i [class]=\"classPrefix('Pod$1Icon$2') + ' fa-solid $3'\"></i>"
 	},
-	"Angular motion": {
+	"Angular Animation Motion": {
 		"prefix": "wmlmotion",
 		"body": [
 			"[ngStyle]=\"$1.style\"",
 			"(animationend)=\"$1.animationEnd(\\$event)\"",
+			"[class]=\"$1.class\""
+		]
+	},
+	"Angular Transition Motion": {
+		"prefix": "wmlmotion",
+		"body": [
+			"[ngStyle]=\"$1.style\"",
+			"(transitionend)=\"$1.transitionEnd(\\$event)\"",
 			"[class]=\"$1.class\""
 		]
 	}

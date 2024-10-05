@@ -170,3 +170,9 @@ Changed error handling parameter in try-catch block in `snippets/dart.json` from
 You’re now using `props` instead of `params` in multiple snippets across `javascriptreact.json`, `typescript.json`, and `typescriptreact.json`. Specifically, this change impacts the constructor function of classes, which now filters out props starting with 'param'. This means if you're writing a class with the provided snippets, use `props` when passing arguments to the constructor, not `params`. also made for `javascript.json`
 
 
+## [1.94.0] [10/5/2024 2:00:00 PM EST]
+
+[UPDATE] Added a new snippet called "TakeVariableArgs" in go.json. Use it to prompt users for multiple answers.
+[FIX] In html.json, fixed the \$event in the img snippet so it works right.
+[UPDATE] Renamed "Angular motion" snippet to "Angular Animation Motion" in html.json.
+[UPDATE] Added a new snippet "Angular Transition Motion" in html.json. for the WMLMotionUIProperty transition feature.
