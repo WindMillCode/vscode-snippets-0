@@ -29,8 +29,7 @@
 		"prefix": "wmlmotion",
 		"body": [
 			"[ngStyle]=\"$1.style\"",
-			"(animationend)=\"$1.animationEnd(\\$event)\"",
-			"[class]=\"$1.class\""
+			"(animationend)=\"$1.animationEnd(\\$event)\""
 		]
 	},
 	"Angular Transition Motion": {

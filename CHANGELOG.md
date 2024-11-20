@@ -176,3 +176,11 @@ You’re now using `props` instead of `params` in multiple snippets across `java
 [FIX] In html.json, fixed the \$event in the img snippet so it works right.
 [UPDATE] Renamed "Angular motion" snippet to "Angular Animation Motion" in html.json.
 [UPDATE] Added a new snippet "Angular Transition Motion" in html.json. for the WMLMotionUIProperty transition feature.
+
+## [1.95.3000] 11/19/2024 01:45:12 PM EST
+
+[FIX] In `html.json`, removed `[class]="$1.class"` from the `wmlmotion` snippet. This simplifies the snippet and ensures no unnecessary bindings confuse developers.
+
+[UPDATE] In `html.json`, added the new `Angular Transition Motion` snippet for the `WMLMotionUIProperty` transition feature. Use this to define transition motions for your Angular animations.
+
+[CHECKPOINT] In the changelog, logged the updates for the new `Angular Transition Motion` snippet and renamed `Angular motion` to `Angular Animation Motion`.
