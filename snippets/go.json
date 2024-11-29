@@ -13,6 +13,19 @@
 		],
 		"description": "Create a go run command"
 	},
+	"CommandOptionsSnippetForExecutable": {
+		"prefix": "utils.CommandOptions",
+		"body": [
+			"${1:commandOptions} := utils.CommandOptions{",
+			"\tCommand:     \"$2\",",
+			"\tArgs:        []string{\"\"},",
+			"\tGetOutput:   false,",
+			"\tPrintOutputOnly: true,",
+			"}",
+			"${5:result}, err := utils.RunCommandWithOptions(${1:commandOptions})"
+		],
+		"description": "Create a go run command for a running process"
+	},
 	"for range loop": {
     "prefix": "gorange",
     "body": [

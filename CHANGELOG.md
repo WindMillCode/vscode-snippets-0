@@ -184,3 +184,8 @@ You’re now using `props` instead of `params` in multiple snippets across `java
 [UPDATE] In `html.json`, added the new `Angular Transition Motion` snippet for the `WMLMotionUIProperty` transition feature. Use this to define transition motions for your Angular animations.
 
 [CHECKPOINT] In the changelog, logged the updates for the new `Angular Transition Motion` snippet and renamed `Angular motion` to `Angular Animation Motion`.
+
+## [1.95.3001] 11/29/2024 01:45:12 PM EST
+
+[UPDATE] added CommandOptionsSnippetForExecutable ideal for generating utils.CommandOptions for processes
+
